@@ -186,7 +186,7 @@ with st.container():
 
         import streamlit as st
 
-        st.header("Click the button to get more information")
+        st.header("Learn more about Cyberbullying")
         st.write("")
 
         if tweet_input:
