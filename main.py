@@ -18,30 +18,14 @@ def load_lottieurl(url):
 lottie_coding = load_lottieurl(
     "https://lottie.host/ea778dba-1c32-446e-9944-997643978f56/XyKvrkZVTU.json"
 )
-img_logo = Image.open(
-    "/ComSci/2-year_Semester-2/Data Mining/project/Streamlit_app_cyber/image/logo.png"
-)
-img_stk = Image.open(
-    "/ComSci/2-year_Semester-2/Data Mining/project/Streamlit_app_cyber/image/group.png"
-)
-img_stk2 = Image.open(
-    "/ComSci/2-year_Semester-2/Data Mining/project/Streamlit_app_cyber/image/people.png"
-)
-bully_age = Image.open(
-    "/ComSci/2-year_Semester-2/Data Mining/project/Streamlit_app_cyber/image/bully_age.png"
-)
-bully_ethnicity = Image.open(
-    "/ComSci/2-year_Semester-2/Data Mining/project/Streamlit_app_cyber/image/bully_ethnicity.png"
-)
-bully_gender = Image.open(
-    "/ComSci/2-year_Semester-2/Data Mining/project/Streamlit_app_cyber/image/bully_gender.png"
-)
-bully_religion = Image.open(
-    "/ComSci/2-year_Semester-2/Data Mining/project/Streamlit_app_cyber/image/bully_religion.png"
-)
-bully_not = Image.open(
-    "/ComSci/2-year_Semester-2/Data Mining/project/Streamlit_app_cyber/image/bully_not.png"
-)
+img_logo = Image.open("image/logo.png")
+img_stk = Image.open("image/group.png")
+img_stk2 = Image.open("image/people.png")
+bully_age = Image.open("image/bully_age.png")
+bully_ethnicity = Image.open("image/bully_ethnicity.png")
+bully_gender = Image.open("image/bully_gender.png")
+bully_religion = Image.open("image/bully_religion.png")
+bully_not = Image.open("image/bully_not.png")
 
 with st.container():
     logo_column, text_column = st.columns([1, 6])
