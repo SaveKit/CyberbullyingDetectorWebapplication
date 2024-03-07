@@ -2,6 +2,8 @@
 import pandas as pd
 import re
 import string
+import nltk
+import pickle
 from nltk.stem import WordNetLemmatizer
 from nltk.corpus import stopwords
 from sklearn.model_selection import train_test_split
@@ -10,9 +12,6 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.preprocessing import LabelEncoder
 from nltk.tokenize import RegexpTokenizer
 from nltk import PorterStemmer, WordNetLemmatizer
-import pickle
-
-import nltk
 
 nltk.download("wordnet")
 nltk.download("omw-1.4")

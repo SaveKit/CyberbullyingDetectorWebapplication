@@ -1,9 +1,9 @@
 import streamlit as st
+import requests
+import webbrowser
 from PIL import Image
 from functions import *
-import requests
 from streamlit_lottie import st_lottie
-import webbrowser
 
 st.set_page_config(page_title="Cyberbullying", page_icon="logo.png")
 
