@@ -185,43 +185,58 @@ with st.container():
         """
         )
 
+        import streamlit as st
+
         st.header("Learn more about Cyberbullying")
         st.write("")
+
         if tweet_input:
             prediction = custom_input_prediction(tweet_input)
+
             if prediction == "Age":
                 st.video(
                     "https://www.youtube.com/watch?v=BIyOtjRY_0I&pp=ygUfaG93IHRvIGhhbmRsZSBhZ2UgY3liZXJidWxseWluZw%3D%3D"
                 )
                 if st.button("***Learn How to Deal With Cyberbullying***"):
-                    resource_url = "https://parents.au.reachout.com/common-concerns/everyday-issues/cyberbullying-and-teenagers"
-                    webbrowser.open(resource_url)
+                    st.markdown(
+                        "[Learn How to Deal With Cyberbullying](https://parents.au.reachout.com/common-concerns/everyday-issues/cyberbullying-and-teenagers)"
+                    )
+
             elif prediction == "Ethnicity":
                 st.video(
                     "https://www.youtube.com/watch?v=CFekuzaWcLI&pp=ygUjaG93IHRvIGhhbmRsZSBldGhpY2FsIGN5YmVyYnVsbHlpbmc%3D"
                 )
                 if st.button("***Learn How to Deal With Cyberbullying***"):
-                    resource_url = "https://www.ipl.org/essay/Ethical-Issues-In-Social-Media-Bullying-P3RWGHHESJFR"
-                    webbrowser.open(resource_url)
+                    st.markdown(
+                        "[Learn How to Deal With Cyberbullying](https://www.ipl.org/essay/Ethical-Issues-In-Social-Media-Bullying-P3RWGHHESJFR)"
+                    )
+
             elif prediction == "Gender":
                 st.video("https://www.youtube.com/watch?v=iFlrCuSyhvU")
                 if st.button("***Learn How to Deal With Cyberbullying***"):
-                    resource_url = "https://spssi.onlinelibrary.wiley.com/doi/full/10.1111/josi.12503"
-                    webbrowser.open(resource_url)
+                    st.markdown(
+                        "[Learn How to Deal With Cyberbullying](https://spssi.onlinelibrary.wiley.com/doi/full/10.1111/josi.12503)"
+                    )
+
             elif prediction == "Religion":
                 st.video("https://www.youtube.com/watch?v=dRAWq-JqLY4")
                 if st.button("***Learn How to Deal With Cyberbullying***"):
-                    resource_url = "https://cyberbullying.org/bullying-and-religion"
-                    webbrowser.open(resource_url)
+                    st.markdown(
+                        "[Learn How to Deal With Cyberbullying](https://cyberbullying.org/bullying-and-religion)"
+                    )
+
             elif prediction == "Not Cyberbullying":
                 st.video("https://www.youtube.com/watch?v=dMdKmHjpgFk")
                 if st.button("***Learn How to Deal With Cyberbullying***"):
-                    resource_url = "https://www.hp.com/ca-en/shop/offer.aspx?p=best-ways-to-prevent-cyber-bullying-online"
-                    webbrowser.open(resource_url)
+                    st.markdown(
+                        "[Learn How to Deal With Cyberbullying](https://www.hp.com/ca-en/shop/offer.aspx?p=best-ways-to-prevent-cyber-bullying-online)"
+                    )
+
         else:
             st.write(
                 """***No information to display. Please enter a tweet text to get more information.***"""
             )
+
 
 with st.container():
     left_column, middle_column, right_column = st.columns([3, 0.5, 3])
