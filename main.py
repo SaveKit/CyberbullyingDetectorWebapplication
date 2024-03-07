@@ -133,7 +133,7 @@ with st.container():
         font-style: italic;
         font-size: 18px;
         font-weight: bold;
-        line-height: 0.8;
+        line-height: 1.1;
         }}
         </style>
         """,
@@ -154,11 +154,10 @@ with st.container():
             """
             )
 
-        # justify content center
         st.markdown(
             f"""
         <style>
-        .st-emotion-cache-1kyxreq {{
+        .st-emotion-cache-1kyxreq,.css-du1fp8 {{
         justify-content: center;
         }}
         </style>
@@ -197,7 +196,7 @@ with st.container():
                 st.video(
                     "https://www.youtube.com/watch?v=BIyOtjRY_0I&pp=ygUfaG93IHRvIGhhbmRsZSBhZ2UgY3liZXJidWxseWluZw%3D%3D"
                 )
-                if st.button("***Learn How to Deal With Cyberbullying***"):
+                if st.button("Learn How to Deal With Cyberbullying"):
                     st.markdown(
                         "[Learn How to Deal With Cyberbullying](https://parents.au.reachout.com/common-concerns/everyday-issues/cyberbullying-and-teenagers)"
                     )
@@ -206,28 +205,28 @@ with st.container():
                 st.video(
                     "https://www.youtube.com/watch?v=CFekuzaWcLI&pp=ygUjaG93IHRvIGhhbmRsZSBldGhpY2FsIGN5YmVyYnVsbHlpbmc%3D"
                 )
-                if st.button("***Learn How to Deal With Cyberbullying***"):
+                if st.button("Learn How to Deal With Cyberbullying"):
                     st.markdown(
                         "[Learn How to Deal With Cyberbullying](https://www.ipl.org/essay/Ethical-Issues-In-Social-Media-Bullying-P3RWGHHESJFR)"
                     )
 
             elif prediction == "Gender":
                 st.video("https://www.youtube.com/watch?v=iFlrCuSyhvU")
-                if st.button("***Learn How to Deal With Cyberbullying***"):
+                if st.button("Learn How to Deal With Cyberbullying"):
                     st.markdown(
                         "[Learn How to Deal With Cyberbullying](https://spssi.onlinelibrary.wiley.com/doi/full/10.1111/josi.12503)"
                     )
 
             elif prediction == "Religion":
                 st.video("https://www.youtube.com/watch?v=dRAWq-JqLY4")
-                if st.button("***Learn How to Deal With Cyberbullying***"):
+                if st.button("Learn How to Deal With Cyberbullying"):
                     st.markdown(
                         "[Learn How to Deal With Cyberbullying](https://cyberbullying.org/bullying-and-religion)"
                     )
 
             elif prediction == "Not Cyberbullying":
                 st.video("https://www.youtube.com/watch?v=dMdKmHjpgFk")
-                if st.button("***Learn How to Deal With Cyberbullying***"):
+                if st.button("Learn How to Deal With Cyberbullying"):
                     st.markdown(
                         "[Learn How to Deal With Cyberbullying](https://www.hp.com/ca-en/shop/offer.aspx?p=best-ways-to-prevent-cyber-bullying-online)"
                     )
