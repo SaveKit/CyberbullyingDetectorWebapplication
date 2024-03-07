@@ -95,7 +95,9 @@ def preprocess(text):
 
 # Function for custom input prediction
 def custom_input_prediction(text):
+    import nltk
 
+    nltk.download("omw-1.4")
     text = pd.Series(text)
     text = preprocess(text)
     text = [
@@ -112,8 +114,7 @@ def custom_input_prediction(text):
         1: "Ethnicity",
         2: "Gender",
         3: "Not Cyberbullying",
-        4: "Other Cyberbullying",
-        5: "Religion",
+        4: "Religion",
     }
 
     for i in interpretations.keys():
